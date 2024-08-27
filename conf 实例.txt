@@ -1,0 +1,16 @@
+[policy]
+;static = policy-name-1, Sample-A, Sample-B, Sample-C, img-url=http://example.com/icon.png
+;available = policy-name-2, Sample-A, Sample-B, Sample-C
+;round-robin = policy-name-3, Sample-A, Sample-B, Sample-C
+;ssid = policy-name-4, Sample-A, Sample-B, LINK_22E171:Sample-B, LINK_22E172:Sample-C
+;static = policy-name-5, resource-tag-regex=^sample, server-tag-regex=^example, img-url=http://example.com/icon.png
+;available = policy-name-6, resource-tag-regex=^sample, server-tag-regex=^example
+;round-robin = policy-name-7, resource-tag-regex=^sample, server-tag-regex=^example
+;dest-hash = policy-name-8, resource-tag-regex=^sample, server-tag-regex=^example
+;url-latency-benchmark = policy-name-9, resource-tag-regex=^sample, server-tag-regex=^example, check-interval=600, alive-checking=false, tolerance=0
+
+#
+# Params "tag" and "enabled" are optional.
+# The default sync interval for all kinds of remote resources is 86400 seconds.
+# You can set update-interval=172800 to customize your auto sync interval(seconds), negative number means disable auto sync.
+# If the require-devices is set, this line of configuration will only be loaded when current Quantumult device ID belongs to the require-devices. The Quantumult device ID can be found in "Settings - Misc Settings - About".
